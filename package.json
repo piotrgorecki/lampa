@@ -11,7 +11,8 @@
     "lint": "eslint .",
     "clear": "watchman watch-del-all && rm -f yarn.lock && rm -rf node_modules && yarn",
     "clear:android": "cd android && ./gradlew clean ; cd -",
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "prepareimages": "ts-node ./prepareImages.ts"
   },
   "dependencies": {
     "@react-native-community/masked-view": "0.1.6",
@@ -34,6 +35,8 @@
     "@babel/runtime": "^7.6.2",
     "@react-native-community/eslint-config": "0.0.7",
     "@react-native-community/eslint-plugin": "1.0.0",
+    "@types/node": "13.9.2",
+    "@types/sharp": "0.24.0",
     "@typescript-eslint/eslint-plugin": "2.21.0",
     "@typescript-eslint/parser": "2.21.0",
     "babel-eslint": "10.1.0",
@@ -49,6 +52,8 @@
     "metro-react-native-babel-preset": "^0.56.0",
     "prettier": "1.19.1",
     "react-test-renderer": "16.9.0",
+    "sharp": "0.25.2",
+    "ts-node": "8.7.0",
     "tslint-config-prettier": "1.18.0",
     "tslint-plugin-prettier": "2.1.0"
   },
