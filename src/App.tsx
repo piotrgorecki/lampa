@@ -8,8 +8,8 @@ const Stack = createStackNavigator();
 
 const App = () => (
     <NavigationContainer>
-        <Stack.Navigator>
-            <Stack.Screen name="Lampa!" component={HomeScreen} />
+        <Stack.Navigator screenOptions={{ header: () => null }}>
+            <Stack.Screen name="Home" component={HomeScreen} />
         </Stack.Navigator>
     </NavigationContainer>
 );
